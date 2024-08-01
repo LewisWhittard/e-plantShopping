@@ -304,7 +304,6 @@ const handlePlantsClick = (e) => {
                                         <img className="product-image" src={plant.image} alt={plant.name} />
                                         <div className="product-title">{plant.name}</div>
                                         {/*Similarly like the above plant.name show other details like description and cost*/}
-                                        // if the product is already added to cart, show "Added to Cart" button, else show "Add to Cart" button
                                         {addedToCart[plant.name] ? (
                                             <button disabled={true} className="product-button" onClick={() => handleAddToCart(plant)}>Added to Cart</button>
                                         ) : (
